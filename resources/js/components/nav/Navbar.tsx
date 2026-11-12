@@ -204,6 +204,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Right Side: Mobile Hamburger Icon */}
+
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsMobileMenuOpen(true)}
@@ -211,7 +212,7 @@ export default function Navbar() {
                             className="p-1 rounded-lg focus:outline-none"
                         >
                             <svg
-                                className="w-6 h-6"
+                                className="w-6 h-6 text-gray-600"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
