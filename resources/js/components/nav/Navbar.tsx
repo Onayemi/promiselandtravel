@@ -106,7 +106,7 @@ export default function Navbar() {
                     {/* Right Side: Desktop Nav & Social Icons */}
                     <div className="hidden md:flex items-center gap-6">
                         {/* Reusable Nav Items */}
-                        <nav className="flex items-center gap-5 text-sm font-semibold">
+                        <nav className="flex items-center gap-5 text-sm text-gray-600 font-semibold">
                             {NAV_ITEMS.map((item) =>
                                 item.submenu ? (
                                     <div
@@ -179,7 +179,7 @@ export default function Navbar() {
                         ></div>
 
                         {/* Social Icons (Desktop) */}
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center text-gray-600 gap-3">
                             {SOCIAL_ICONS.map((social) => (
                                 <a
                                     key={social.name}
