@@ -6,27 +6,30 @@ const FOOTER_LINKS = [
         title: "Company",
         links: [
             { label: "About", href: "/about" },
-            { label: "Careers", href: "#careers" },
-            { label: "Press & Media", href: "#press" },
-            { label: "Blog & Travel News", href: "#blog" },
+            { label: "Services", href: "/services" },
+            { label: "Contact", href: "/contact" },
+            { label: "Blog & Travel News", href: "#" },
         ],
     },
     {
         title: "Services",
         links: [
-            { label: "Flight Booking", href: "#flight-booking" },
-            { label: "Hotel Reservations", href: "#hotel-reservations" },
-            { label: "Visa Assistance", href: "#visa-assistance" },
-            { label: "Airport Transfers", href: "#car-rentals" },
+            { label: "Flight Booking", href: "/services/flight-booking" },
+            {
+                label: "Hotel Reservations",
+                href: "/services/hotel-reservations",
+            },
+            { label: "Visa Assistance", href: "/services/visa-assistance" },
+            { label: "Airport Transfers", href: "/services/airport-transfers" },
         ],
     },
     {
         title: "Support & Legal",
         links: [
-            { label: "Help Center & FAQs", href: "#faq" },
-            { label: "Terms & Conditions", href: "#terms" },
-            { label: "Privacy Policy", href: "#privacy" },
-            { label: "Refund Policy", href: "#refunds" },
+            { label: "Help Center & FAQs", href: "/contact" },
+            { label: "Terms & Conditions", href: "#" },
+            { label: "Privacy Policy", href: "#" },
+            { label: "Refund Policy", href: "#" },
         ],
     },
 ];
@@ -130,8 +133,8 @@ export default function Footer() {
                             className="text-3xl font-bold italic tracking-tighter text-white inline-block"
                         >
                             <img
-                                src="/images/logo2.png"
-                                alt="PromiseLand Travel Int'l"
+                                src="/images/logo_white.png"
+                                alt="PromiseLand Travel Tours"
                                 className="w-full h-16 object-cover group-hover:scale-105 transition duration-500 ease-out"
                             />
                         </a>
@@ -142,11 +145,9 @@ export default function Footer() {
                         </p>
 
                         <div className="text-xs text-slate-400 space-y-1.5 pt-2">
-                            <p>
-                                📍 12 Victoria Island Expressway, Lagos, Nigeria
-                            </p>
-                            <p>📞 Support line: +234 (0) 703 333 0882</p>
-                            <p>✉️ Email: support@ajala.ng</p>
+                            <p>📍 Carrefou Acacias, Yaounde, Cameroon</p>
+                            <p>📞 Support line: +237653033320</p>
+                            <p>✉️ Email: support@promiselandtravel.com</p>
                         </div>
                     </div>
 
@@ -181,33 +182,6 @@ export default function Footer() {
                     <div className="text-xs text-slate-400 text-center md:text-left">
                         © {new Date().getFullYear()} Promise Land Travel
                         International. All rights reserved.
-                    </div>
-
-                    {/* Payment Gateways & Cards */}
-                    <div className="flex flex-col sm:flex-row items-center gap-3">
-                        <span className="text-xs text-slate-400 font-medium">
-                            Secured Payment by:
-                        </span>
-                        <div className="flex items-center gap-2 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
-                            {/* Paystack Badge */}
-                            <span className="text-xs font-bold text-emerald-400 tracking-wider">
-                                Paystack
-                            </span>
-                            <span className="text-slate-600">|</span>
-                            {/* Visa */}
-                            <span className="text-xs font-black italic text-blue-400">
-                                VISA
-                            </span>
-                            {/* Mastercard */}
-                            <div className="flex -space-x-1 items-center">
-                                <div className="w-3.5 h-3.5 bg-red-500 rounded-full opacity-90"></div>
-                                <div className="w-3.5 h-3.5 bg-amber-400 rounded-full opacity-90"></div>
-                            </div>
-                            {/* Verve Badge */}
-                            <span className="text-xs font-bold text-teal-400 italic">
-                                Verve
-                            </span>
-                        </div>
                     </div>
 
                     {/* Social Media Links */}

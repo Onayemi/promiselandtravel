@@ -10,17 +10,17 @@ import {
 import React from "react";
 import MainLayout from "@/layouts/main-layout";
 import SEO from "@/components/nav/seo";
+import PageHero from "@/components/nav/PageHero";
 
 export default function ContactPage() {
     // Configuration details
     const contactInfo = {
-        companyName: "MGE Solutions Ltd",
-        address:
-            "Cherub Mall, Suite B22 KM 18 Lekki-Epe Express Way By New Road Bus Stop LEKKI",
-        cityState: "Lagos, Nigeria",
-        phone: "2348142316400",
-        whatsapp: "2348142316400",
-        email: "support@mgesolutionsltd.com",
+        companyName: "PROMISED LAND TRAVELS AND TOURS",
+        address: "Carrefou Acacias, Yaounde, Cameroon",
+        // cityState: "Lagos, Nigeria",
+        phone: "237653033320",
+        whatsapp: "237653033320",
+        email: "support@promiselandtravel.com",
         hours: [
             { days: "Monday – Friday", time: "8:00 AM – 6:00 PM" },
             { days: "Saturday", time: "9:00 AM – 2:00 PM" },
@@ -28,9 +28,9 @@ export default function ContactPage() {
         ],
         // Embed URL for Google Maps
         mapEmbedUrl:
-            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.641314133919!2d3.523643773116777!3d6.440087324130945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf6f665329c8b%3A0x557f7c5053d54371!2sCherub%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1789054526562!5m2!1sen!2sng",
+            "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3980.855579803723!2d11.48597382310251!3d3.8411636985130153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCarrefou%20Acacias%2C%20Yaounde%2C%20Cameroon!5e0!3m2!1sen!2sng!4v1794648284254!5m2!1sen!2sng",
         googleMapsDirectionsUrl:
-            "https://maps.google.com/?q=Lekki+Ajah+Victoria+Island+Lagos+Nigeria",
+            "https://maps.google.com/?q=Carrefou+Acacias+Yaounde+Cameroon",
     };
 
     return (
@@ -38,22 +38,11 @@ export default function ContactPage() {
             title="Contact Us"
             description="Explore our range of travel solutions including flight bookings, hotel reservations, and visa consultations."
         >
-            <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#014310] to-[#02611d] text-white text-center">
-                <div className="max-w-4xl mx-auto space-y-4">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-                        Connecting You to the Scenery of the World
-                    </h1>
-                    <p className="text-slate-200 text-lg font-light max-w-2xl mx-auto">
-                        Àjàlá.ng was founded to redefine how travelers explore
-                        domestic and international destinations with speed,
-                        trust, and simplicity.
-                    </p>
-                </div>
-            </div>
-
-            {/* <Topbar
-                title="Contact Us"
-            /> */}
+            <PageHero
+                badge="Contact Us"
+                title="Connecting You to the Scenery of the World"
+                subtitle="Get in touch with our team for inquiries, support, or to explore our travel solutions. We're here to assist you on your journey."
+            />
 
             <div className="flex min-h-screen flex-col justify-between bg-slate-50">
                 {/* Top Container: Info Cards */}
@@ -98,7 +87,7 @@ export default function ContactPage() {
                                             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" />
                                             <div>
                                                 <p>{contactInfo.address}</p>
-                                                <p>{contactInfo.cityState}</p>
+                                                {/* <p>{contactInfo.cityState}</p> */}
                                             </div>
                                         </div>
                                     </div>
@@ -236,6 +225,8 @@ export default function ContactPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                         className="h-full w-full grayscale-[20%] transition-all duration-300 hover:grayscale-0"
                     />
+
+                    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3980.855579803723!2d11.48597382310251!3d3.8411636985130153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCarrefou%20Acacias%2C%20Yaounde%2C%20Cameroon!5e0!3m2!1sen!2sng!4v1794648284254!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> */}
                 </div>
             </div>
         </MainLayout>

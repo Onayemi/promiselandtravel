@@ -1,5 +1,6 @@
 import React from "react";
 import MainLayout from "@/layouts/main-layout";
+import PageHero from "@/components/nav/PageHero";
 
 const STATS = [
     { label: "Happy Travelers", value: "150,000+" },
@@ -12,20 +13,13 @@ export default function About() {
     return (
         <MainLayout
             title="About Us"
-            description="Discover the story and mission behind Travel Agent, your premier travel partner."
+            description="Discover the story and mission behind PromiseLand Travel Tours, your premier travel and global commerce partner."
         >
-            <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#014310] to-[#02611d] text-white text-center">
-                <div className="max-w-4xl mx-auto space-y-4">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-                        Connecting You to the Scenery of the World
-                    </h1>
-                    <p className="text-slate-200 text-lg font-light max-w-2xl mx-auto">
-                        Àjàlá.ng was founded to redefine how travelers explore
-                        domestic and international destinations with speed,
-                        trust, and simplicity.
-                    </p>
-                </div>
-            </div>
+            <PageHero
+                badge="About PromiseLand Travel Tours"
+                title="Connecting You to the Scenery of the World"
+                subtitle="PromiseLand was founded to redefine how travelers and businesses explore domestic and international opportunities with speed, trust, and simplicity."
+            />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-10">
                 <div className="bg-white rounded-2xl shadow-xl border border-slate-100 grid grid-cols-2 lg:grid-cols-4 p-6 sm:p-8">
@@ -54,16 +48,17 @@ export default function About() {
                         </h2>
                         <p className="text-slate-600 text-sm leading-relaxed">
                             Named in honor of the iconic Nigerian globetrotter,
-                            Àjàlá.ng embodies the spirit of boundless curiosity
-                            and adventure. We believe booking a flight or
-                            planning a vacation should be as effortless as
-                            dreaming about it.
+                            PromiseLand Travel Tours embodies the spirit of
+                            boundless curiosity and enterprise. Beyond flights
+                            and tourism, we bridge global trade through
+                            import/export facilitation, study abroad advisory,
+                            and seamless courier logistics.
                         </p>
                     </div>
                     <div className="relative">
                         <img
                             src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800"
-                            alt="Travel"
+                            alt="Global Travel and Logistics"
                             className="rounded-2xl shadow-2xl object-cover w-full h-[350px]"
                         />
                     </div>

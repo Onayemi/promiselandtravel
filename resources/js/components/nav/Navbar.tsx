@@ -10,16 +10,17 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    {
-        label: "Services",
-        submenu: [
-            { label: "Services Booking", href: "/services" },
-            { label: "Flight Booking", href: "#flight-booking" },
-            { label: "Hotel Reservations", href: "#hotel-reservations" },
-            { label: "Visa Assistance", href: "#visa-assistance" },
-            { label: "Car Rentals", href: "#car-rentals" },
-        ],
-    },
+    { label: "Services", href: "/services" },
+    // {
+    //     label: "Products",
+    //     submenu: [
+    //         { label: "Services Booking", href: "/services" },
+    //         { label: "Flight Booking", href: "#flight-booking" },
+    //         { label: "Hotel Reservations", href: "#hotel-reservations" },
+    //         { label: "Visa Assistance", href: "#visa-assistance" },
+    //         { label: "Car Rentals", href: "#car-rentals" },
+    //     ],
+    // },
     { label: "Contact", href: "/contact" },
 ];
 
@@ -84,7 +85,7 @@ export default function Navbar() {
             <header
                 className={`fixed top-0 left-0 w-full z-40 shadow-lg transition-all duration-300 ${
                     isScrolled
-                        ? "bg-white/70 backdrop-blur-md shadow-sm text-slate-900 border-b border-slate-200/50"
+                        ? "bg-white/60 backdrop-blur-md shadow-sm text-slate-900 hover:text-white border-b border-slate-200/50"
                         : "bg-transparent text-white"
                 }`}
             >
@@ -106,7 +107,7 @@ export default function Navbar() {
                     {/* Right Side: Desktop Nav & Social Icons */}
                     <div className="hidden md:flex items-center gap-6">
                         {/* Reusable Nav Items */}
-                        <nav className="flex items-center gap-5 text-sm text-gray-600 font-semibold">
+                        <nav className="flex items-center gap-5 text-sm text-black font-semibold">
                             {NAV_ITEMS.map((item) =>
                                 item.submenu ? (
                                     <div
@@ -120,7 +121,7 @@ export default function Navbar() {
                                         }
                                     >
                                         <button
-                                            className="flex items-center gap-1 hover:opacity-75 transition py-1"
+                                            className="flex items-center gap-1 text-black hover:opacity-75 transition py-1"
                                             onClick={() =>
                                                 setIsServicesOpen(
                                                     !isServicesOpen,
@@ -148,12 +149,12 @@ export default function Navbar() {
                                         </button>
 
                                         {isServicesOpen && (
-                                            <div className="absolute right-0 top-full w-48 bg-white rounded-xl shadow-xl border border-slate-100 py-1 text-slate-800 animate-in fade-in zoom-in-95 duration-150">
+                                            <div className="absolute right-0 top-full w-48 bg-white rounded-xl shadow-xl border border-slate-100 py-1 text-black animate-in fade-in zoom-in-95 duration-150">
                                                 {item.submenu.map((sub) => (
                                                     <a
                                                         key={sub.label}
                                                         href={sub.href}
-                                                        className="block px-4 py-2 text-xs font-medium hover:bg-slate-50 hover:text-[#05306d]"
+                                                        className="block px-4 py-2 text-xs font-medium text-black hover:bg-slate-50 hover:text-[#05306d]"
                                                     >
                                                         {sub.label}
                                                     </a>
@@ -165,7 +166,7 @@ export default function Navbar() {
                                     <a
                                         key={item.label}
                                         href={item.href}
-                                        className="hover:text-blue-600 transition"
+                                        className="text-black hover:text-blue-600 transition"
                                     >
                                         {item.label}
                                     </a>
@@ -175,11 +176,11 @@ export default function Navbar() {
 
                         {/* Divider */}
                         <div
-                            className={`w-[1px] h-4 ${isScrolled ? "bg-slate-300" : "bg-white/40"}`}
+                            className={`w-[1px] h-4 ${isScrolled ? "bg-black/30" : "bg-black/20"}`}
                         ></div>
 
                         {/* Social Icons (Desktop) */}
-                        <div className="flex items-center text-gray-600 gap-3">
+                        <div className="flex items-center text-black gap-3">
                             {SOCIAL_ICONS.map((social) => (
                                 <a
                                     key={social.name}
@@ -187,7 +188,7 @@ export default function Navbar() {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label={social.name}
-                                    className="hover:opacity-75 transition p-1"
+                                    className="text-black hover:opacity-75 transition p-1"
                                 >
                                     {social.svg}
                                 </a>
@@ -212,7 +213,7 @@ export default function Navbar() {
                             className="p-1 rounded-lg focus:outline-none"
                         >
                             <svg
-                                className="w-6 h-6 text-gray-600"
+                                className="w-6 h-6 text-gray-300"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -250,8 +251,8 @@ export default function Navbar() {
                     <div className="flex justify-between items-center pb-4 border-b border-neutral-800">
                         <span className="text-xl font-bold italic tracking-tighter text-white">
                             <img
-                                src="/images/logo2.png"
-                                alt="PromiseLand Travel Int'l"
+                                src="/images/logo_white.png"
+                                alt="PromiseLand Travel Tours"
                                 className="w-full h-10 object-cover group-hover:scale-105 transition duration-500 ease-out"
                             />
                         </span>
@@ -350,7 +351,7 @@ export default function Navbar() {
                     </div>
 
                     <a
-                        href="#book"
+                        href="/contact"
                         className="block w-full text-center bg-[#042d6b] hover:bg-[#041e68] text-white py-2.5 rounded-xl text-xs font-bold transition shadow-lg"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
