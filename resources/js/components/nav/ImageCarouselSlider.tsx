@@ -15,7 +15,7 @@ interface CarouselSlideItem {
 const CAROUSEL_SLIDES: CarouselSlideItem[] = [
     {
         id: 1,
-        image: "/images/game/advert1.png",
+        image: "/images/game/advert1.jpg",
         currencySymbol: "€",
         amount: "500",
         sourceName: "Payment from Meta",
@@ -59,7 +59,7 @@ const CAROUSEL_SLIDES: CarouselSlideItem[] = [
     },
     {
         id: 5,
-        image: "/images/game/advert5.png",
+        image: "/images/game/advert5.jpg",
         currencySymbol: "€",
         amount: "2,100",
         sourceName: "PayPal Invoice",
