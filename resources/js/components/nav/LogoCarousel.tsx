@@ -3,6 +3,7 @@ import React from "react";
 const PARTNERS = [
     { name: "Qatar Airways", logoText: "🛫 Qatar Airways" },
     { name: "Emirates", logoText: "✈️ Emirates" },
+    { name: "Singapore Airlines", logoText: "🛫 Singapore Airlines" },
     { name: "BusinessDay", logoText: "📰 BusinessDay" },
     { name: "Forbes", logoText: "💼 Forbes" },
     { name: "TechCrunch", logoText: "💻 TechCrunch" },
@@ -13,7 +14,7 @@ export default function LogoCarousel() {
         <section className="py-12 bg-slate-900 border-y border-slate-800 overflow-hidden font-sans">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
                 <h3 className="text-2xl font-bold uppercase tracking-widest text-slate-400 text-center">
-                    Trusted by Industry Leaders & Featured On
+                    Our Trusted Partners
                 </h3>
 
                 {/* Horizontal Infinite Sliding Marquee Track */}

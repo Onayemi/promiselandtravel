@@ -128,7 +128,7 @@ export default function ImageCarouselSlider() {
                             Global Coverage
                         </span>
                         <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
-                            Trusted Payouts & Global Reach
+                            Trusted by Global Partners & Clients
                         </h2>
                     </div>
 
@@ -171,23 +171,6 @@ export default function ImageCarouselSlider() {
                                         alt={slide.title}
                                         className="absolute inset-0 w-full h-full object-cover brightness-[0.95] group-hover:scale-135 transition duration-500"
                                     />
-
-                                    {/* Gradient Vignette Overlay */}
-                                    {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div> */}
-
-                                    {/* Top Floating Category Badge */}
-                                    {/* <div className="relative z-10 p-5">
-                                        <span className="bg-slate-900/80 backdrop-blur-md border border-slate-700/65 px-3 py-1 rounded-full text-[11px] font-bold text-white tracking-wide shadow">
-                                            {slide.category}
-                                        </span>
-                                    </div> */}
-
-                                    {/* Bottom Content & Notification Card */}
-                                    {/* <div className="relative z-10 p-5 space-y-4">
-                                        <h3 className="text-lg font-bold text-white">
-                                            {slide.title}
-                                        </h3>
-                                    </div> */}
                                 </div>
                             </div>
                         ))}
