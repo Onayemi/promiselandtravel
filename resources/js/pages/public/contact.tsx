@@ -18,8 +18,8 @@ export default function ContactPage() {
         companyName: "PROMISED LAND TRAVELS AND TOURS",
         address: "Carrefou Acacias, Yaounde, Cameroon",
         // cityState: "Lagos, Nigeria",
-        phone: "237653033320",
-        whatsapp: "237653033320",
+        phone: import.meta.env.VITE_WHATSAPP_NUMBER ?? "",
+        whatsapp: import.meta.env.VITE_WHATSAPP_NUMBER ?? "",
         email: "support@promiselandtravel.com",
         hours: [
             { days: "Monday – Friday", time: "8:00 AM – 6:00 PM" },
@@ -171,6 +171,9 @@ export default function ContactPage() {
                                                 </p>
                                                 <p className="text-xs font-semibold break-all text-slate-800">
                                                     {contactInfo.email}
+                                                </p>
+                                                <p className="text-xs font-semibold break-all text-slate-800">
+                                                    promiselandtours2@gmail.com
                                                 </p>
                                             </div>
                                         </div>

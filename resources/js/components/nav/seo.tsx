@@ -2,7 +2,7 @@ import React from "react";
 import { Head } from "@inertiajs/react";
 
 interface SEOProps {
-    title: string;
+    title?: string;
     description?: string;
     image?: string;
     url?: string;
@@ -10,11 +10,11 @@ interface SEOProps {
 
 export default function SEO({
     title,
-    description = "Explore the vast scenery of the world with Àjàlá.ng. Seamless flight bookings, hotel reservations, and travel packages.",
-    image = "/images/og-cover.jpg",
+    description = "Explore the vast scenery of the world with Promiseland Travel. Seamless flight bookings, hotel reservations, and travel packages.",
+    image = "/images/promiseland_travel.jpg",
     url = typeof window !== "undefined" ? window.location.href : "",
 }: SEOProps) {
-    const fullTitle = `${title} | TravelAgent`;
+    const fullTitle = `${title} | Promise Land Travel`;
 
     return (
         <Head>

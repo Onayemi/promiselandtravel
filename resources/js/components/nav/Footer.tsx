@@ -74,6 +74,8 @@ const SOCIAL_ICONS = [
     },
 ];
 
+const LOGO_WHITE = "/images/logo_white.png";
+
 export default function Footer() {
     const [newsletterEmail, setNewsletterEmail] = useState("");
     const [isSubscribed, setIsSubscribed] = useState(false);
@@ -87,7 +89,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-blue-900 text-slate-300 font-sans border-t border-blue-800">
+        <footer className="bg-black text-slate-300 font-sans border-t border-black">
             {/* Top Newsletter Banner */}
             <div className="bg-[#04599e] text-white py-10 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -133,9 +135,9 @@ export default function Footer() {
                             className="text-3xl font-bold italic tracking-tighter text-white inline-block"
                         >
                             <img
-                                src="/images/logo_white.png"
+                                src={LOGO_WHITE}
                                 alt="PromiseLand Travel Tours"
-                                className="w-full h-16 object-cover group-hover:scale-105 transition duration-500 ease-out"
+                                className="w-full h-1 object-cover group-hover:scale-105 transition duration-500 ease-out"
                             />
                         </a>
                         <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
@@ -148,6 +150,7 @@ export default function Footer() {
                             <p>📍 Carrefou Acacias, Yaounde, Cameroon</p>
                             <p>📞 Support line: +237653033320</p>
                             <p>✉️ Email: support@promiselandtravel.com</p>
+                            <p>✉️ Email: promiselandtours2@gmail.com</p>
                         </div>
                     </div>
 

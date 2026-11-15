@@ -47,7 +47,7 @@ export default function About() {
                             Journeys
                         </h2>
                         <p className="text-slate-600 text-sm leading-relaxed">
-                            Named in honor of the iconic Nigerian globetrotter,
+                            Named in honor of the iconic Cameroon globetrotter,
                             PromiseLand Travel Tours embodies the spirit of
                             boundless curiosity and enterprise. Beyond flights
                             and tourism, we bridge global trade through
@@ -57,7 +57,8 @@ export default function About() {
                     </div>
                     <div className="relative">
                         <img
-                            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800"
+                            src="/images/game/advert5.jpg"
+                            // src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800"
                             alt="Global Travel and Logistics"
                             className="rounded-2xl shadow-2xl object-cover w-full h-[350px]"
                         />

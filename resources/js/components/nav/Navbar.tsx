@@ -64,6 +64,9 @@ const SOCIAL_ICONS = [
     },
 ];
 
+const LOGO = "/images/logo2.png";
+const LOGO_WHITE = "/images/logo_white.png";
+
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -97,9 +100,9 @@ export default function Navbar() {
                             className="text-2xl font-bold italic tracking-tighter"
                         >
                             <img
-                                src="/images/logo2.png"
+                                src={LOGO}
                                 alt="PromiseLand Travel Int'l"
-                                className="w-full h-16 object-cover group-hover:scale-105 transition duration-500 ease-out"
+                                className="w-full h-12 object-cover group-hover:scale-105 transition duration-500 ease-out"
                             />
                         </a>
                     </div>
@@ -213,7 +216,7 @@ export default function Navbar() {
                             className="p-1 rounded-lg focus:outline-none"
                         >
                             <svg
-                                className="w-6 h-6 text-gray-300"
+                                className="w-6 h-6 text-gray-800"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -251,7 +254,7 @@ export default function Navbar() {
                     <div className="flex justify-between items-center pb-4 border-b border-neutral-800">
                         <span className="text-xl font-bold italic tracking-tighter text-white">
                             <img
-                                src="/images/logo_white.png"
+                                src={LOGO_WHITE}
                                 alt="PromiseLand Travel Tours"
                                 className="w-full h-10 object-cover group-hover:scale-105 transition duration-500 ease-out"
                             />
