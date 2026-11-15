@@ -147,7 +147,7 @@ export default function Footer() {
                         </p>
 
                         <div className="text-xs text-slate-400 space-y-1.5 pt-2">
-                            <p>📍 Carrefou Acacias, Yaounde, Cameroon</p>
+                            <p>📍 Carrefou Acacias, Yaounde, Cameroon.</p>
                             <p>📞 Support line: +237653033320</p>
                             <p>✉️ Email: support@promiselandtravel.com</p>
                             <p>✉️ Email: promiselandtours2@gmail.com</p>
