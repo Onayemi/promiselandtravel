@@ -14,7 +14,7 @@ export default function SEO({
     image = "/images/promiseland_travel.jpg",
     url = typeof window !== "undefined" ? window.location.href : "",
 }: SEOProps) {
-    const fullTitle = `${title} | Promise Land Travel`;
+    const fullTitle = `${title} | The Promise Land Travel`;
 
     return (
         <Head>
